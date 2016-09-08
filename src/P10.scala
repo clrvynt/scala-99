@@ -18,7 +18,7 @@ object P10 {
   }
   
   def pack[A](list: List[A]): List[List[A]] = {
-    var mutList = scala.collection.mutable.MutableList[List[A]]()
+    val mutList = scala.collection.mutable.MutableList[List[A]]()
     var prevElement: Option[A] = None
     var insideList = scala.collection.mutable.MutableList[A]()
     for ( i <- 0 to list.length - 1) {

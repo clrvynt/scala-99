@@ -9,6 +9,7 @@ project/target
 target
 tmp
 .cache
+.cache-main
 .history
 dist
 /.idea
