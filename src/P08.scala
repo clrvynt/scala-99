@@ -8,7 +8,7 @@ import scala.annotation.tailrec
  */
 object P08 {
   def compress[A](list: List[A]): List[A] = {
-    var mutList = scala.collection.mutable.MutableList[A]()
+    val mutList = scala.collection.mutable.MutableList[A]()
     var prevElement: Option[A] = None
     for ( i <- 0 to list.length - 1) {
       if ( Some(list(i)) != prevElement) {
