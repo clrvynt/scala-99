@@ -7,7 +7,8 @@
  */
 object P19 {
   
-  // Assume n < list.
+  // Assume n < list.size else n = list.size % n
+  // if n < 0, n = list.size + n
   def rotate[A](n: Int, list: List[A]): List[A] = {
     
     def rotateR(n: Int, left: List[A], right: List[A]): (List[A], List[A]) = {
